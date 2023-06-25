@@ -1,18 +1,52 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Programming Language Suggester</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Programming Language Suggester</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Programming Language Suggester</h1>
-    <form id="survey-form">
+  <h1>Programming Language Suggester</h1>
 
-        <button type="submit">submit</button>
-    </form>
-    <div id="result" style="display: none;">
-    
-    </div>
-    <script src="script.js"></script>
+  <form id="surveyForm">
+    <label>
+      What is your level of programming experience?<br>
+      <input type="radio" name="experience" value="beginner" required> Beginner<br>
+      <input type="radio" name="experience" value="intermediate"> Intermediate<br>
+      <input type="radio" name="experience" value="advanced"> Advanced
+    </label>
+
+    <label>
+      What type of applications do you want to build?<br>
+      <input type="radio" name="applications" value="web" required> Web applications<br>
+      <input type="radio" name="applications" value="mobile"> Mobile applications<br>
+      <input type="radio" name="applications" value="desktop"> Desktop applications
+    </label>
+
+    <label>
+      Are you interested in data analysis and machine learning?<br>
+      <input type="radio" name="dataAnalysis" value="yes" required> Yes<br>
+      <input type="radio" name="dataAnalysis" value="no"> No
+    </label>
+
+    <label>
+      What is your preferred programming paradigm?<br>
+      <input type="radio" name="paradigm" value="procedural" required> Procedural<br>
+      <input type="radio" name="paradigm" value="objectOriented"> Object-oriented<br>
+      <input type="radio" name="paradigm" value="functional"> Functional
+    </label>
+
+    <label>
+      What is your favorite color?<br>
+      <input type="radio" name="color" value="blue" required> Blue<br>
+      <input type="radio" name="color" value="red"> Red<br>
+      <input type="radio" name="color" value="green"> Green
+    </label>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
