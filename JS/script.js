@@ -1,15 +1,15 @@
-var surveyForm = document.getElementById('surveyForm');
-var resultDiv = document.getElementById('result');
+const surveyForm = document.getElementById('surveyForm');
+const resultDiv = document.getElementById('result');
 
 surveyForm.addEventListener('submit', function(event) {
   event.preventDefault();
   resultDiv.textContent = '';
 
-  var experience = document.querySelector('input[name="experience"]:checked').value;
-  var applications = document.querySelector('input[name="applications"]:checked').value;
-  var dataAnalysis = document.querySelector('input[name="dataAnalysis"]:checked').value;
-  var paradigm = document.querySelector('input[name="paradigm"]:checked').value;
-  var color = document.querySelector('input[name="color"]:checked').value;
+  const experience = document.querySelector('input[name="experience"]:checked').value;
+  const applications = document.querySelector('input[name="applications"]:checked').value;
+  const dataAnalysis = document.querySelector('input[name="dataAnalysis"]:checked').value;
+  const paradigm = document.querySelector('input[name="paradigm"]:checked').value;
+  const color = document.querySelector('input[name="color"]:checked').value;
 
   if (experience === 'beginner' && applications === 'web' && dataAnalysis === 'no') {
     resultDiv.textContent = 'Based on your answers, we suggest you learn JavaScript!';
