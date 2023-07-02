@@ -1,4 +1,6 @@
-const surveyForm = document.getElementById('surveyForm');
+window.addEventListener<"load">function(){
+
+  const surveyForm = document.getElementById('surveyForm');
 const resultDiv = document.getElementById('result');
 
 surveyForm.addEventListener('submit', function(event) {
@@ -21,3 +23,4 @@ surveyForm.addEventListener('submit', function(event) {
     resultDiv.textContent = 'Based on your answers, we suggest you learn Python!';
   }
 });
+}
